@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Editor Canva</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .head {
+            padding: 50px;
+            text-align: left;
+            opacity: 0;
+        }
+
+        .content {
+            padding: 0 50px;
+            text-align: left;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        button:hover {
+            background-color: #054385;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top left, #007bff, transparent);
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        /* Media queries */
+        @media only screen and (max-width: 600px) {
+            .head {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 0 20px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Hi Bokepers</h1>
+        <div class="content">
+            <p>Disini anda bisa menjelajah genre apapun sahaja,sesuai kesangean anda.
+                Anda crot kami puas,ibarat pepatah bilang kena gigi uang kembali, keluar taik sodok lagi.
+                Silahkan dinikmati
+            </p>
+            <a href="https://tobrut.pro/yandex-viral-selebgram-cantik-2023/.com">
+                <button>Temukan lebih banyak!</button>
+            </a>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>eregsi berat</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const head = document.querySelector('.head');
+            head.style.animation = 'fadeIn 2s forwards';
+        });
+
+        window.addEventListener('beforeunload', function() {
+            const head = document.querySelector('.head');
+            head.style.animation = 'fadeOut 2s forwards';
+        });
+    </script>
+</body>
+</html>
